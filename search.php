@@ -19,7 +19,6 @@
 </head>
 <body>
 
-
 <div class="container">
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
@@ -46,37 +45,180 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="customize-col-content">
+    <div class="customize-col-content" style="height: 270px;">
         <div>
             <span class="pull-left">
                         <ul class="nav panel-tabs">
-                            <li class="active"><a href="#tab1" data-toggle="tab">W jedną stronę</a></li>
-                            <li><a href="#tab2" data-toggle="tab">W dwie strony</a></li>
-                            <li><a href="#tab3" data-toggle="tab">Multi wyszukiwanie</a></li>
+                            <li style="background: #4e4b53" class="active"><a href="#tab1" data-toggle="tab">W jedną
+                                    stronę</a></li>
+                            <li style="background: #4e4b53"><a href="#tab2" data-toggle="tab">W dwie strony</a></li>
+                            <li style="background: #4e4b53"><a href="#tab3" data-toggle="tab">Multi wyszukiwanie</a>
+                            </li>
                         </ul>
             </span>
         </div>
 
-        <div class="tab-content ">
-            <div class="tab-pane active" id="tab1">
+        <div class="tab-content" style="clear: both; ">
+            <div class="tab-pane active customize-box-wrapper" id="tab1">
                 <div class="customize-box-wrapper ">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group text-right">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Bez przesiadek
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input1" class="col-sm-3 control-label">Z</label>
 
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="input1"
+                                           placeholder="Wprowadź lotnisko początkowe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input2" class="col-sm-3 control-label">Termin wylotu</label>
+
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="input2">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="select1" class="col-sm-3 control-label">Klasa</label>
+
+                                <div class="col-sm-9">
+                                    <select class="form-control" id="select1">
+                                        <option>Ekonomiczna</option>
+                                        <option>Biznesowa</option>
+                                        <option>Pierwsza</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input4" class="col-sm-3 control-label">Do</label>
+
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="input4"
+                                           placeholder="Wprowadź lotnisko docelowe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input4" class="col-sm-3 control-label">Dorośli</label>
+
+                                <div class="col-sm-3">
+                                    <input type="number" value="1" class="form-control" id="input4">
+                                </div>
+                                <label for="input4" class="col-sm-3 control-label">Liczba dzieci</label>
+
+                                <div class="col-sm-3">
+                                    <input type="number" value="0" class="form-control" id="input4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <button type="submit" class="btn btn-default">Szukaj połączeń</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
 
-            <div class="tab-pane" id="tab2">
-
+            <div class="tab-pane customize-box-wrapper" id="tab2">
                 <div class="customize-box-wrapper">
-                    <h4>Odrzucone</h4>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group text-right">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Bez przesiadek
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input1" class="col-sm-3 control-label">Z</label>
+
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="input1"
+                                           placeholder="Wprowadź lotnisko początkowe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input2" class="col-sm-3 control-label">Termin wylotu</label>
+
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="input2">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="select1" class="col-sm-3 control-label">Klasa</label>
+
+                                <div class="col-sm-9">
+                                    <select class="form-control" id="select1">
+                                        <option>Ekonomiczna</option>
+                                        <option>Biznesowa</option>
+                                        <option>Pierwsza</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input4" class="col-sm-3 control-label">Do</label>
+
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="input4"
+                                           placeholder="Wprowadź lotnisko docelowe">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input2" class="col-sm-3 control-label">Termin powrotu</label>
+
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="input2">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input4" class="col-sm-3 control-label">Dorośli</label>
+
+                                <div class="col-sm-3">
+                                    <input type="number" value="1" class="form-control" id="input4">
+                                </div>
+                                <label for="input4" class="col-sm-3 control-label">Liczba dzieci</label>
+
+                                <div class="col-sm-3">
+                                    <input type="number" value="0" class="form-control" id="input4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <button type="submit" class="btn btn-default">Szukaj połączeń</button>
+                            </div>
+                        </div>
+                    </form>
 
                 </div>
             </div>
 
-            <div class="tab-pane" id="tab3">
+            <div class="tab-pane customize-box-wrapper" id="tab3">
 
                 <div class="customize-box-wrapper">
                     <h4>3</h4>
-
                 </div>
             </div>
         </div>
@@ -115,7 +257,7 @@
         line-height: .85;
         border: 1px solid transparent;
         border-radius: 4px 4px 0 0;
-        color: #918D99;
+        color: #f4ebff;
     }
 
     .panel-tabs > li > a:hover {
@@ -127,7 +269,7 @@
     .panel-tabs > li.active > a,
     .panel-tabs > li.active > a:hover,
     .panel-tabs > li.active > a:focus {
-        color: #aaafb4;
+        color: #f2f9ff;
         cursor: default;
         font-weight: bold;
         -webkit-border-radius: 2px;
