@@ -45,7 +45,9 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="customize-col-content" style="height: 270px;">
+    <div class="customize-col-content" style="min-height: 270px;">
+        <h4 class="text-center">Wyszukiwanie połączeń</h4>
+
         <div>
             <span class="pull-left">
                         <ul class="nav panel-tabs">
@@ -216,10 +218,153 @@
             </div>
 
             <div class="tab-pane customize-box-wrapper" id="tab3">
+                <form class="form-horizontal" role="form">
 
-                <div class="customize-box-wrapper">
-                    <h4>3</h4>
-                </div>
+                    <div class="customize-box-wrapper ">
+                        <div class="form-group text-right">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Bez przesiadek
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input1" class="col-sm-3 control-label">Z</label>
+
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="input1"
+                                           placeholder="Wprowadź lotnisko początkowe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input2" class="col-sm-3 control-label">Termin wylotu</label>
+
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="input2">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="select1" class="col-sm-3 control-label">Klasa</label>
+
+                                <div class="col-sm-9">
+                                    <select class="form-control" id="select1">
+                                        <option>Ekonomiczna</option>
+                                        <option>Biznesowa</option>
+                                        <option>Pierwsza</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input4" class="col-sm-3 control-label">Do</label>
+
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="input4"
+                                           placeholder="Wprowadź lotnisko docelowe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input4" class="col-sm-3 control-label">Dorośli</label>
+
+                                <div class="col-sm-3">
+                                    <input type="number" value="1" class="form-control" id="input4">
+                                </div>
+                                <label for="input4" class="col-sm-3 control-label">Liczba dzieci</label>
+
+                                <div class="col-sm-3">
+                                    <input type="number" value="0" class="form-control" id="input4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right" style="font-size: 20px">
+                            <a class="alert-link" href="">X</a>
+                        </div>
+                    </div>
+                    <div style="clear: both; border-top: 1px solid #525252"></div>
+                    <div class="customize-box-wrapper ">
+                        <div class="form-group text-right">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Bez przesiadek
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input1" class="col-sm-3 control-label">Z</label>
+
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="input1"
+                                           placeholder="Wprowadź lotnisko początkowe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input2" class="col-sm-3 control-label">Termin wylotu</label>
+
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="input2">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="select1" class="col-sm-3 control-label">Klasa</label>
+
+                                <div class="col-sm-9">
+                                    <select class="form-control" id="select1">
+                                        <option>Ekonomiczna</option>
+                                        <option>Biznesowa</option>
+                                        <option>Pierwsza</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input4" class="col-sm-3 control-label">Do</label>
+
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="input4"
+                                           placeholder="Wprowadź lotnisko docelowe">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input4" class="col-sm-3 control-label">Dorośli</label>
+
+                                <div class="col-sm-3">
+                                    <input type="number" value="1" class="form-control" id="input4">
+                                </div>
+                                <label for="input4" class="col-sm-3 control-label">Liczba dzieci</label>
+
+                                <div class="col-sm-3">
+                                    <input type="number" value="0" class="form-control" id="input4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right" style="font-size: 20px">
+                            <a class="alert-link" href="">X</a>
+                        </div>
+                    </div>
+                    <div style="clear: both; border-top: 1px solid #525252"></div>
+                    <div class="text-right" style="margin: 10px 0px">
+                        <button class="btn btn-default">Dodaj kolejne</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <button type="submit" class="btn btn-default">Szukaj połączeń</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
