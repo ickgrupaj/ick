@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Loty</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +37,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Strona główna</a></li>
                     <li class="active"><a href="search.php">Loty</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="kontakt.php">Kontakt</a></li>
                     <li><a href="#">Rejestracja</a></li>
                     <li><a href="#">Logowanie</a></li>
                 </ul>

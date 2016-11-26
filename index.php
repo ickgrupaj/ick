@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Strona główna</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Strona główna</a></li>
                     <li><a href="search.php">Loty</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="kontakt.php">Kontakt</a></li>
                     <li><a href="#">Rejestracja</a></li>
                     <li><a href="#">Logowanie</a></li>
                 </ul>
@@ -62,7 +62,7 @@
                     <h3>Lot</h3>
                     <h5>Wrocław-Warszawa</h5>
                     <h4>99zł</h4>
-                    <button class="btn btn-primary" href="">SPRAWDŹ</button>
+                    <a class="btn btn-primary" href="flightdetail.html">SPRAWDŹ</a>
                 </div>
             </div>
             <div class="col-md-4">
@@ -71,7 +71,7 @@
                     <h3>Lot</h3>
                     <h5>Wrocław-Warszawa</h5>
                     <h4>99zł</h4>
-                    <button class="btn btn-primary" href="">SPRAWDŹ</button>
+                    <a class="btn btn-primary" href="flightdetail.html">SPRAWDŹ</a>
                 </div>
             </div>
             <div class="col-md-4">
@@ -80,7 +80,7 @@
                     <h3>Lot</h3>
                     <h5>Wrocław-Warszawa</h5>
                     <h4>99zł</h4>
-                    <button class="btn btn-primary" href="">SPRAWDŹ</button>
+                    <a class="btn btn-primary" href="flightdetail.html">SPRAWDŹ</a>
                 </div>
             </div>
         </div>
