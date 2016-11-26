@@ -128,7 +128,7 @@
                         </div>
                         <div class="form-group text-center">
                             <div class="col-sm-offset-2 col-sm-8">
-                                <button type="submit" class="btn btn-default">Szukaj połączeń</button>
+                                <a href="result.php" type="submit" class="btn btn-primary">Szukaj połączeń</a>
                             </div>
                         </div>
                     </form>
@@ -209,7 +209,7 @@
                         </div>
                         <div class="form-group text-center">
                             <div class="col-sm-offset-2 col-sm-8">
-                                <button type="submit" class="btn btn-default">Szukaj połączeń</button>
+                                <button type="submit" class="btn btn-primary">Szukaj połączeń</button>
                             </div>
                         </div>
                     </form>
@@ -357,11 +357,11 @@
                     </div>
                     <div style="clear: both; border-top: 1px solid #525252"></div>
                     <div class="text-right" style="margin: 10px 0px">
-                        <button class="btn btn-default">Dodaj kolejne</button>
+                        <button class="btn btn-primary">Dodaj kolejne</button>
                     </div>
                     <div class="form-group text-center">
                         <div class="col-sm-offset-2 col-sm-8">
-                            <button type="submit" class="btn btn-default">Szukaj połączeń</button>
+                            <button type="submit" class="btn btn-primary">Szukaj połączeń</button>
                         </div>
                     </div>
                 </form>
