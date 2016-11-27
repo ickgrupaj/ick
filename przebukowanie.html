@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="pl_PL">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Przebukuj bilet</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Rozwiń nawigację</span>
+                        <span class="icon-bar" />
+                        <span class="icon-bar" />
+                        <span class="icon-bar" />
+                    </button>
+                    <a class="navbar-brand" href="#">"Marka - Logo strony"</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="search.html">Loty</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li class="active"><a href="historia.html">Historia</a></li>
+                    <li><a href="profile.html">Konto</a></li>
+                    <li><a href="login.html">Wyloguj się</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <div class="customize-col-content">
+            <h4 class="text-center" style="margin-top: 20px; margin-bottom: 20px">Przebukuj bilet</h4>
+            <div>
+                <div class="col-sm-12">
+                    <h5>Połączenie</h5>
+                    <div style="background-color: #fff; display:inline-block; width:100%">
+                        <div class="form-group">
+                            <div class="col-sm-5">
+                                <div class="col-sm-5 text-right">
+                                    <label>Skąd:</label>
+                                </div>
+                                <div class="col-sm-7" >
+                                    <label>Wrocław (Strachowice)</label>
+                                </div>
+                                <div class="col-sm-5 text-right">
+                                    <label>Godzina odlotu:</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <label>7:40</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="col-sm-5 text-right">
+                                    <label>Dokąd:</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <label>Warszawa (Okęcie)</label>
+                                </div>
+                                <div class="col-sm-5 text-right">
+                                    <label>Godzina przylotu:</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <label>9:20</label>
+                                </div>
+                            </div>  
+                            <div class="col-sm-5">
+                                <div class="col-sm-5 col-xs-5 text-right">
+                                    <div>
+                                        <label>Data odlotu:</label>
+                                    </div>
+                                    <div>
+                                        <label>Linie lotnicze:</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 col-xs-7">
+                                    <div>
+                                        <input type="date" id="birthDate" class="form-control" value="29/11/2016">
+                                    </div>
+                                    <div>
+                                        <label>Polskie Linie Lotnicze - LOT</label>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <h5>Pasażerowie</h5>
+                    <table class="table" style="background-color: #fff">
+                        <thead>
+                            <tr>
+                                <th>Imię</th>
+                                <th>Nazwisko</th>
+                                <th>Bagaż</th>
+                                <th>Seria i nr dokumentu</th>
+                                <th>Klasa</th>
+                                <th>Miejsce</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input value="Jan" class="form-control">
+                                </td>
+                                <td>
+                                    <input value="Kowalski" class="form-control">
+                                </td>
+                                <td>
+                                    <select class="form-control" id="sel1">
+                                        <option>do 15kg</option>
+                                        <option>do 20kg</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input value="ATF135512" class="form-control">
+                                </td>
+                                <td>
+                                    <select class="form-control" id="sel1">
+                                        <option>Pierwsza</option>
+                                        <option>Ekonomiczna</option>
+                                        <option>Biznesowa</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <a href="seats.html" type="submit" class="btn btn-primary">Wybierz</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input value="Tomasz" class="form-control">
+                                </td>
+                                <td>
+                                    <input value="Kowalski" class="form-control">
+                                </td>
+                                <td>
+                                    <select class="form-control" id="sel1">
+                                        <option>do 15kg</option>
+                                        <option>do 20kg</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input value="ATF175412" class="form-control">
+                                </td>
+                                <td>
+                                    <select class="form-control" id="sel1">
+                                        <option>Pierwsza</option>
+                                        <option>Ekonomiczna</option>
+                                        <option>Biznesowa</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <a href="seats.html" type="submit" class="btn btn-primary">Wybierz</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input value="Karolina" class="form-control">
+                                </td>
+                                <td>
+                                    <input value="Kowalska" class="form-control">
+                                </td>
+                                <td>
+                                    <select class="form-control" id="sel1">
+                                        <option>do 15kg</option>
+                                        <option>do 20kg</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input value="ABC213344" class="form-control">
+                                </td>
+                                <td>
+                                    <select class="form-control" id="sel1">
+                                        <option>Pierwsza</option>
+                                        <option>Ekonomiczna</option>
+                                        <option>Biznesowa</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <a href="seats.html" type="submit" class="btn btn-primary">Wybierz</a>
+                                </td>
+                            </tr>
+                    </table>
+                    <hr>
+                </div>
+                <div class="col-sm-12">
+                    <label for="input4" class="col-sm-3 control-label text-right">Do zapłaty:</label>
+                    <label class="checkbox-inline">500zł</label>
+                </div>
+
+                <div class="col-sm-12">
+                        <a href="payment.html" type="submit" class="btn btn-primary pull-right">Zatwierdź zmiany i opłać</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" />
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js" />
+</body>
+</html>

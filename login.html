@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Logowanie</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Rozwiń nawigację</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">"Marka - Logo strony"</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="search.html">Loty</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="signup.html">Rejestracja</a></li>
+                    <li class="active"><a href="login.html">Logowanie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	
+	
+    <div class="customize-col-content" style="min-height: 350px;">	
+    	  <div class="col-md-offset-5 col-md-3">
+            <div class="form-login">
+			<h4>Zaloguj się</h4>
+			<label>Login</label>
+            <input type="text" id="userName" class="form-control"/>
+            </br>
+			<label>Hasło</label>
+            <input type="password" id="userPassword" class="form-control"/>
+			<input name="show" type="checkbox" value="show" > Pokaż hasło
+            </br>
+			<a href="#" class="forgot-password">
+                Zapomniałem hasła
+            </a><br>
+			<a href="#" class="forgot-password">
+                Nie masz jeszcze konta? Zarejestruj się!
+            </a><br><br>
+            <a href="profile.html" class="btn btn-primary btn-md">Zaloguj</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<style>
+    /*Panel tabs*/
+    .panel-tabs {
+        position: relative;
+        bottom: 0px;
+        clear: both;
+        border-bottom: 1px solid transparent;
+    }
+
+    .panel-tabs > li {
+        float: left;
+        margin-right: 2px;
+        margin-top: 4px;
+        line-height: .85;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        color: #918D99;
+        background: #edf4f4;
+    }
+
+    .panel-tabs > li > a {
+        line-height: .85;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        color: #f4ebff;
+    }
+
+    .panel-tabs > li > a:hover {
+        border-color: transparent;
+        color: #9898a3;
+
+    }
+
+    .panel-tabs > li.active > a,
+    .panel-tabs > li.active > a:hover,
+    .panel-tabs > li.active > a:focus {
+        color: #f2f9ff;
+        cursor: default;
+        font-weight: bold;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        background-color: rgba(255, 255, 255, .23);
+        border-bottom-color: transparent;
+    }
+</style>
