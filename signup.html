@@ -74,8 +74,10 @@
 				    <div class="form-group">
                     <label for="password" class="col-sm-4 control-label">Powtórz hasło</label>
                     <div class="col-sm-4">
-                        <input type="password" id="password" class="form-control">
-						<input name="show" type="checkbox" value="show" > Pokaż hasła
+                        <input type="password" id="password2" class="form-control">
+                        <input type="checkbox" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'; document.getElementById('password2').type = this.checked ? 'text' : 'password'"> Pokaż hasła
+						<!--<input name="show" id="show-pass-cb" type="checkbox" value="show" > Pokaż hasła
+                    -->
                     </div>
                 </div>
                  <hr />
