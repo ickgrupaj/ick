@@ -50,84 +50,90 @@
 
         <center><h1>Kontakt</h1></center>
         <center>
-        <table id="contactTable" style="width:80%; height:300px">
-              <tr>
-                <td style="width:40%;"> <h4>W razie problemów skontaktuj się z nami:</h4> <br>
-             
-                    Biuro Obsługi Klienta (Wrocław)<br>
-                    ul. Lotnicza 15a/3<br>
-                    tel. +48 77 823 19 42<br>
-                    E-mail: <a href="mailto:bokwroclaw@airplanetickets.pl" target="_top">bokwroclaw@airplanetickets.pl</a>
-                    <br>
-                     <br><br>
-                    Biuro Obsługi Klienta (Warszawa)<br>
-                    ul. Wiślana 15a/3<br>
-                    tel. +48 22 843 16 42<br>
-                    E-mail: <a href="mailto:bokwarszawa@airplanetickets.pl" target="_top">bokwarszawa@airplanetickets.pl</a>
-                    <br>
+            <table id="contactTable" style="width:80%; height:300px">
+                <tr>
+                    <td style="width:40%;"><h4>W razie problemów skontaktuj się z nami:</h4> <br>
+
+                        Biuro Obsługi Klienta (Wrocław)<br>
+                        ul. Lotnicza 15a/3<br>
+                        tel. +48 77 823 19 42<br>
+                        E-mail: <a href="mailto:bokwroclaw@airplanetickets.pl" target="_top">bokwroclaw@airplanetickets.pl</a>
+                        <br>
+                        <br><br>
+                        Biuro Obsługi Klienta (Warszawa)<br>
+                        ul. Wiślana 15a/3<br>
+                        tel. +48 22 843 16 42<br>
+                        E-mail: <a href="mailto:bokwarszawa@airplanetickets.pl" target="_top">bokwarszawa@airplanetickets.pl</a>
+                        <br>
                     </td>
-                    
-            
 
 
-            <td style="width:60%;">
-            <center>
-                <div id="map" style="width:450px; height:300px; margin-top: 10%"></div>
-                <script>
-                  function initMap() {
-                    var uluru = {lat: 51.1279469, lng: 16.9748495};
-                    var map = new google.maps.Map(document.getElementById("map"), {
-                      zoom: 15,
-                      center: uluru
-                    });
-                    var marker = new google.maps.Marker({
-                      position: uluru,
-                      map: map
-                    });
-                  }
-                </script>
-                <script async defer
-                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl-I6lFHeHpacF3UeoCqDFn9gOOFiyvXI&callback=initMap">
-                </script>
-                </center>
+                    <td style="width:60%;">
+                        <center>
+                            <div id="map" style="width:450px; height:300px; margin-top: 10%"></div>
+                            <script>
+                                function initMap() {
+                                    var uluru = {lat: 51.1279469, lng: 16.9748495};
+                                    var map = new google.maps.Map(document.getElementById("map"), {
+                                        zoom: 15,
+                                        center: uluru
+                                    });
+                                    var marker = new google.maps.Marker({
+                                        position: uluru,
+                                        map: map
+                                    });
+                                }
+                            </script>
+                            <script async defer
+                                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl-I6lFHeHpacF3UeoCqDFn9gOOFiyvXI&callback=initMap">
+                            </script>
+                        </center>
 
-            </td>
+                    </td>
 
-             </tr>
+                </tr>
 
             </table>
-            </center>
-</div>
+        </center>
 
-<div class="customize-col-content" style="height: 300px">
-<center>
-    <h3> Napisz do nas! </h3>
+        <form class="form-horizontal" role="form" method="post" action="index.html" style="margin-top: 20px">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Imię i nazwisko</label>
 
-    <table id="messageTable" style="width:80%; height:40%" border="3">
-      <tr>
-        <td style="width:30%; ">
-         <input id="contactEmailInput" type="text" style="margin-left: 10%; width:80%" id="contactEmailInput"  placeholder="me@example.com">
-         <br>
-         <br>
-         <br>
-         <button class="btn btn-primary" id="contactSendButton" style="margin-left: 70%" > Wyślij</button>
-        </td>
-        <td style="width:70%;">
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Podaj imię i nazwisko"
+                           value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Email</label>
 
-        <textarea id="concactMailDescriptionInput" style="margin-left: 5%; margin-right: 5%; margin-top: 3%; margin-bottom: 5%; width:90%; resize:none; " name="kontakttresc" cols="95" rows="4" placeholder="Tutaj wpisz treść wiadomości..."></textarea>
-        </td>
-     </tr>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Podaj adres email"
+                           value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="col-sm-2 control-label">Tresc</label>
 
-    </table>
-</center>
+                <div class="col-sm-8">
+                    <textarea class="form-control" rows="4" name="message"></textarea>
+                </div>
+            </div>
+            <div class="form-group text-right">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <input id="submit" name="submit" type="submit" value="Wyślij wiadomość" class="btn btn-primary">
+                </div>
+            </div>
 
-</div>
+        </form>
+    </div>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 
 </body>
