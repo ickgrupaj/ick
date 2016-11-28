@@ -49,10 +49,81 @@
     <div class="customize-col-content">
         <h4 class="text-center">Wyniki wyszukiwania</h4>
 
-        <div class="row" style="margin: 0 30px !important;">
-            <div class="panel panel-default">
+        <div class="row" style="margin: 0 10px 0px 0px!important;">
+            <div class="col-md-3">
+                <div class="panel panel-default col-md-12" style="padding: 0px !important;">
+                    <div class="panel-heading text-center" style="height: 60px; background: #3c3c3c; color: #fff">
+                        <h4>Filtrowanie</h4>
+                    </div>
+                </div>
+                <div style="background-color: #fff; padding: 4px">
+                    <div class="form-group">
+                        <label>
+                            Cena od:
+                        </label>
+
+
+                        <input class="form-control" value="0" type="range" name="rangeInput" min="0" max="3000"
+                               onchange="updateTextInput(this.value);">
+
+                        <div class="row" style="margin: 0 10px">
+
+                            <input style="width: 100px; margin-right: -10px" class="form-control  col-sm-6" type="text"
+                                   id="textInput" value="0">
+                            <span class="col-sm-6" style="margin: 15px 0px 0px 0px">zł</span>
+
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Cena do:
+                        </label>
+                        <input class="form-control" type="range" name="rangeInput2" value="3000" min="0" max="3000"
+                               onchange="updateTextInput2(this.value);">
+
+                        <div class="row" style="margin: 0 10px">
+                            <input style="width: 100px; margin-right: -10px" class="form-control col-sm-6" type="text"
+                                   id="textInput2"
+                                   value="3000">
+
+                            <span class="col-sm-6" style="margin: 15px 0px 0px 0px">zł</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Przewoźnicy:
+                        </label>
+
+                        <div class="form-check ">
+                            <label class="form-check-label" style="font-weight: normal !important">
+                                <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option1">
+                                LOT
+                            </label>
+                        </div>
+                        <div class="form-check ">
+                            <label class="form-check-label" style="font-weight: normal !important">
+                                <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
+                                Wizzair
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" style="font-weight: normal !important">
+                                <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
+                                Ryanair
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Zastosuj</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel panel-default col-md-9" style="padding: 0px !important;">
                 <div class="panel-heading" style="height: 60px; background: #3c3c3c; color: #fff">
-                    <div class="col-sm-6">
+                    <div class="col-sm-8">
                         <div class="row">
                             <div class="col-md-4"><strong>Z:</strong> Wrocław</div>
                             <div class="col-md-4"><strong>Do:</strong> Warszawa</div>
@@ -69,24 +140,46 @@
 
                 </div>
                 <table class="table table-fixed">
-                    <thead >
-                    <tr >
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <select style="border-radius: 3px; color: #3c3c3c" id="select1">
+                                <option>Cena rosnąco</option>
+                                <option>Cena malejąco</option>
+                                <option>Czas rosnąco</option>
+                                <option>Czas malejąco</option>
+                            </select>
+                        </td>
+                        <td>
+                            <a class="btn-sm btn-primary">sortuj</a>
+                        </td>
+                    </tr>
+                    <tr>
                         <th class="col-xs-2">Skąd</th>
                         <th class="col-xs-1">Start</th>
                         <th class="col-xs-2">Dokąd</th>
                         <th class="col-xs-1">Koniec</th>
+                        <th class="col-xs-2">Czas lotu</th>
                         <th class="col-xs-2">Przewoźnik</th>
+                        <th class="col-xs-1">Przesiadek</th>
                         <th class="col-xs-2">Cena</th>
                         <th class="col-xs-1"></th>
                     </tr>
-                    </thead>
                     <tbody>
                     <tr>
                         <td class="col-xs-2">Wrocław (Starachowice)</td>
                         <td class="col-xs-1">6:30</td>
                         <td class="col-xs-2">Warszawa (Chopin)</td>
                         <td class="col-xs-1">7:30</td>
+                        <td class="col-xs-2">60 min</td>
                         <td class="col-xs-2">LOT</td>
+                        <td class="col-xs-1">0</td>
                         <td class="col-xs-1">99 zł</td>
                         <td class="col-xs-1"><a href="flightdetail.html" class="btn btn-primary">Zamów</a></td>
                     </tr>
@@ -95,7 +188,9 @@
                         <td class="col-xs-1">6:30</td>
                         <td class="col-xs-2">Warszawa (Chopin)</td>
                         <td class="col-xs-1">7:30</td>
+                        <td class="col-xs-2">60 min</td>
                         <td class="col-xs-2">LOT</td>
+                        <td class="col-xs-1">0</td>
                         <td class="col-xs-1">99 zł</td>
                         <td class="col-xs-1"><a href="flightdetail.html" class="btn btn-primary">Zamów</a></td>
                     </tr>
@@ -104,7 +199,9 @@
                         <td class="col-xs-1">6:30</td>
                         <td class="col-xs-2">Warszawa (Chopin)</td>
                         <td class="col-xs-1">7:30</td>
+                        <td class="col-xs-2">60 min</td>
                         <td class="col-xs-2">LOT</td>
+                        <td class="col-xs-1">0</td>
                         <td class="col-xs-1">99 zł</td>
                         <td class="col-xs-1"><a href="flightdetail.html" class="btn btn-primary">Zamów</a></td>
                     </tr>
@@ -114,24 +211,22 @@
         </div>
     </div>
 </div>
+<script>
+    function updateTextInput(val) {
+        document.getElementById('textInput').value = val;
+    }
 
+    function updateTextInput2(val) {
+        document.getElementById('textInput2').value = val;
+    }
+</script>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+
+</script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
 
-<style>
-
-/**/
-    /*.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {*/
-        /*display: block;*/
-    /*}*/
-
-    /*.table-fixed tbody td, .table-fixed thead > tr > th {*/
-        /*float: left;*/
-        /*border-bottom-width: 0;*/
-    /*}*/
-</style>
