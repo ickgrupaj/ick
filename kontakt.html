@@ -117,14 +117,19 @@
                 <label for="message" class="col-sm-2 control-label">Treść wiadomości</label>
 
                 <div class="col-sm-8">
-                    <textarea class="form-control" rows="4" name="message"></textarea>
+                    <textarea class="form-control" rows="4" name="message" placeholder="Tu wpisz treść wiadomości..."></textarea>
                 </div>
             </div>
             <div class="form-group text-right">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <input id="submit" name="submit" type="submit" value="Wyślij wiadomość" class="btn btn-primary">
+                    <input id="submit" name="submit" type="button" value="Wyślij wiadomość" onclick="document.getElementById('message_sent_text').style.visibility='visible'" class="btn btn-primary">
                 </div>
+                <div id="message_sent_text" style="visibility: hidden" class="text-right col-sm-8 col-sm-offset-2">
+                <span style="color:#24B90D"><h5><b> Twoja wiadomość została wysłana!
+             </h5></span>
             </div>
+            </div>
+            
 
         </form>
     </div>
