@@ -31,17 +31,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">"Marka - Logo strony"</a>
+               <a class="navbar-brand" href="#" style="padding:0"><img src="logo.png" height="70"/></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="search.html">Loty</a></li>
-                    <li class="active"><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="signup.html">Rejestracja</a></li>
-                    <li><a href="login.html">Logowanie</a></li>
+                    <li><a href="search.html" style="height: 70px; padding-top:25px;">Loty</a></li>
+                    <li class="active"><a href="kontakt.html" style="height: 70px; padding-top:25px;">Kontakt</a></li>
                 </ul>
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="signup.html" style="height: 70px; padding-top:25px;">Rejestracja</a></li>
+                    <li><a href="login.html" style="height: 70px; padding-top:25px;">Logowanie</a></li>
+                    </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
@@ -49,6 +50,10 @@
     <div class="customize-col-content">
 
         <center><h3 style="font-weight:bold">Kontakt</h1></center>
+		<div id="message_sent_text" style="visibility: hidden; height:10px; margin-bottom: -30px;" class="text-center">
+                <span style="color:#24B90D;"><h4><b> Twoja wiadomość została wysłana!
+             </h4></span>
+            </div>
         <center>
             <table id="contactTable" style="width:80%; height:300px">
                 <tr>
@@ -96,7 +101,7 @@
             </table>
         </center>
 
-        <form class="form-horizontal" role="form" method="post" action="index.html" style="margin-top: 20px">
+        <form class="form-horizontal" role="form" method="post" action="index.html" style="margin-top: 20px; margin-left: 80px;">
             <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">Imię i nazwisko</label>
 
@@ -124,10 +129,6 @@
                 <div class="col-sm-8 col-sm-offset-2">
                     <input id="submit" name="submit" type="button" value="Wyślij wiadomość" onclick="document.getElementById('message_sent_text').style.visibility='visible'" class="btn btn-primary">
                 </div>
-                <div id="message_sent_text" style="visibility: hidden" class="text-right col-sm-8 col-sm-offset-2">
-                <span style="color:#24B90D"><h5><b> Twoja wiadomość została wysłana!
-             </h5></span>
-            </div>
             </div>
             
 

@@ -29,59 +29,60 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">"Marka - Logo strony"</a>
+                <a class="navbar-brand" href="#" style="padding:0"><img src="logo.png" height="70"/></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="search.html">Loty</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-					<li><a href="historia.html">Historia</a></li>
-                    <li class="active"><a href="profile.html">Konto</a></li>
-                    <li><a href="#">Zalogowany jako: Janusz</a></li>
-                    <li><a href="login.html">Wyloguj się</a></li>
+                    <li><a href="search.html" style="height: 70px; padding-top:25px;">Loty</a></li>
+                    <li><a href="kontakt.html" style="height: 70px; padding-top:25px;">Kontakt</a></li>
                 </ul>
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="historia.html" style="height: 70px; padding-top:25px;">Historia</a></li>
+                    <li class="active"><a href="profile.html" style="height: 70px; padding-top:25px;">Konto</a></li>
+                    <li><a href="#" style="height: 70px; padding-top:25px;">Zalogowany jako: Janusz</a></li>
+                    <li><a href="login.html" style="height: 70px; padding-top:25px;">Wyloguj się</a></li>
+                    </ul>
             </div>
         </div>
     </nav>
 
 	
 	
-    <div class="customize-col-content" style="min-height: 650px;">	
+    <div class="customize-col-content">	
     	  <div class="col-sm-12">
              <form class="form-horizontal" role="form">
                 <center><h3><b>Dane konta</b></h3></center>
                  <div class="col-sm-12">
-                     <h4 class="col-sm-4 text-right"><b>Dane logowania</b></h4>
+                     <h4 class="col-sm-5 text-right"><b>Dane logowania</b></h4>
                  </div>
                 <div class="form-group">
-                    <label for="login" class="col-sm-4 control-label">Login</label>
-                    <div class="col-sm-4" style="padding-top:7px">
+                    <label for="login" class="col-sm-5 control-label">Login</label>
+                    <div class="col-sm-3" style="padding-top:7px">
                         Kowal556
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email" class="col-sm-4 control-label">Email</label>
-                    <div class="col-sm-4" style="padding-top:7px">
+                    <label for="email" class="col-sm-5 control-label">Email</label>
+                    <div class="col-sm-3" style="padding-top:7px">
                         example@gmail.com
                     </div>
                 </div>
 				<div class="form-group">
-                    <label for="password" class="col-sm-4 control-label">Hasło</label>
-                    <div class="col-sm-4">
+                    <label for="password" class="col-sm-5 control-label">Hasło</label>
+                    <div class="col-sm-3">
                         <input type="password" id="password" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="password" class="col-sm-4 control-label">Nowe hasło</label>
-                    <div class="col-sm-4">
+                    <label for="password" class="col-sm-5 control-label">Nowe hasło</label>
+                    <div class="col-sm-3">
                         <input type="password" id="password1" class="form-control">
                     </div>
                 </div>
                     <div class="form-group">
-                    <label for="password" class="col-sm-4 control-label">Powtórz nowe hasło</label>
-                    <div class="col-sm-4">
+                    <label for="password" class="col-sm-5 control-label">Powtórz nowe hasło</label>
+                    <div class="col-sm-3">
                         <input type="password" id="password2" class="form-control">
                         
                     <input type="checkbox" style="margin-top:10px" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'; document.getElementById('password2').type = this.checked ? 'text' : 'password'; document.getElementById('password1').type = this.checked ? 'text' : 'password'"> Pokaż hasła
@@ -90,33 +91,33 @@
                 </div>
                  <hr />
                  <div class="col-sm-12">
-                     <h4 class="col-sm-4 text-right"><b>Dane personalne</b></h4>
+                     <h4 class="col-sm-5 text-right"><b>Dane personalne</b></h4>
                  </div>
 				<div class="form-group">
-                    <label for="firstName" class="col-sm-4 control-label">Imię</label>
-                    <div class="col-sm-4">
+                    <label for="firstName" class="col-sm-5 control-label">Imię</label>
+                    <div class="col-sm-3">
                         <input type="text" id="firstName" class="form-control" value="Jan">
                     </div>
                 </div>
 				<div class="form-group">
-                    <label for="lastName" class="col-sm-4 control-label">Nazwisko</label>
-                    <div class="col-sm-4">
+                    <label for="lastName" class="col-sm-5 control-label">Nazwisko</label>
+                    <div class="col-sm-3">
                         <input type="text" id="lastName" class="form-control" value="Kowalski">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="birthDate" class="col-sm-4 control-label">Data urodzenia</label>
-                    <div class="col-sm-4">
-                        <input type="date" id="birthDate" class="form-control" style="width: 120px" value="12/03/1986">
+                    <label for="birthDate" class="col-sm-5 control-label">Data urodzenia</label>
+                    <div class="col-sm-3">
+                        <input type="date" id="birthDate" class="form-control" value="12/03/1986">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="ID" class="col-sm-4 control-label">Numer dowodu osobistego</label>
-                    <div class="col-sm-4">
-                        <input type="text" id="ID" class="form-control" style="width: 120px" value="ATF157463">
+                    <label for="ID" class="col-sm-5 control-label">Numer dowodu osobistego</label>
+                    <div class="col-sm-3">
+                        <input type="text" id="ID" class="form-control" value="ATF157463">
                     </div>
                 </div>
-                    <div class="col-sm-4 col-sm-offset-4 text-center">
+                    <div class="col-sm-3 col-sm-offset-5 text-center">
                         <button type="submit" class="btn btn-primary btn-block">Zapisz</button>
                     </div>
             </form> 

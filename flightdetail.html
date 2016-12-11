@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Szczegóły lotu</title>
+    <title>Loty</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,33 +20,197 @@
 <body>
 
 
-    <div class="container">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Rozwiń nawigację</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">"Marka - Logo strony"</a>
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Rozwiń nawigację</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="padding:0"><img src="logo.png" height="70"/></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+                    <li  class="active"><a href="search.html" style="height: 70px; padding-top:25px;">Loty</a></li>
+                    <li><a href="kontakt.html" style="height: 70px; padding-top:25px;">Kontakt</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html" style="height: 70px; padding-top:25px;">Rejestracja</a></li>
+                    <li><a href="login.html" style="height: 70px; padding-top:25px;">Logowanie</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="customize-col-content">
+        <h3 class="text-center" style="font-weight:bold">Wyniki wyszukiwania</h4>
+
+        <div class="row" style="margin: 0 10px 0px 0px!important;">
+            <div class="col-md-3">
+                <div class="panel panel-default col-md-12" style="padding: 0px !important;">
+                    <div class="panel-heading text-center" style="height: 60px; background: #3c3c3c; color: #fff">
+                        <h4>Filtrowanie</h4>
+                    </div>
                 </div>
+                <div style="background-color: #fff; padding: 4px">
+                    <div class="form-group">
+                        <label>
+                            Cena od:
+                        </label>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Strona główna</a></li>
-                        <li class="active"><a href="search.html">Loty</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                        <li><a href="signup.html">Rejestracja</a></li>
-                        <li><a href="login.html">Logowanie</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
 
-        <div class="customize-col-content">
+                        <input class="form-control" value="0" type="range" name="rangeInput" min="0" max="3000"
+                               onchange="updateTextInput(this.value);">
+
+                        <div class="row" style="margin: 0 10px">
+
+                            <input style="width: 100px; margin-right: -10px" class="form-control  col-sm-6" type="text"
+                                   id="textInput" value="0">
+                            <span class="col-sm-6" style="margin: 15px 0px 0px 0px">zł</span>
+
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Cena do:
+                        </label>
+                        <input class="form-control" type="range" name="rangeInput2" value="3000" min="0" max="3000"
+                               onchange="updateTextInput2(this.value);">
+
+                        <div class="row" style="margin: 0 10px">
+                            <input style="width: 100px; margin-right: -10px" class="form-control col-sm-6" type="text"
+                                   id="textInput2"
+                                   value="3000">
+
+                            <span class="col-sm-6" style="margin: 15px 0px 0px 0px">zł</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Przewoźnicy
+                        </label>
+
+                        <div class="form-check ">
+                            <label class="form-check-label" style="font-weight: normal !important">
+                                <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option1">
+                                LOT
+                            </label>
+                        </div>
+                        <div class="form-check ">
+                            <label class="form-check-label" style="font-weight: normal !important">
+                                <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
+                                Wizzair
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" style="font-weight: normal !important">
+                                <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
+                                Ryanair
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary">Zastosuj</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel panel-default col-md-9" style="padding: 0px !important;">
+                <div class="panel-heading" style="height: 60px; background: #3c3c3c; color: #fff">
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-md-4"><strong>Z:</strong> Wrocław</div>
+                            <div class="col-md-4"><strong>Do:</strong> Warszawa</div>
+                            <div class="col-md-4"><strong>Termin:</strong>10.02.2016</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>Klasa:</strong> ekonomiczna</div>
+                            <div class="col-md-4"><strong>Liczba osób:</strong> 4</div>
+                            <div class="col-md-4">bezpośrednio</div>
+                        </div>
+                    </div>
+
+                    <a href="search.html" class="btn btn-primary">Zmień zapytanie</a>
+
+                </div>
+                <table class="table table-fixed">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <select style="border-radius: 3px; color: #3c3c3c" id="select1">
+                                <option>Cena rosnąco</option>
+                                <option>Cena malejąco</option>
+                                <option>Czas rosnąco</option>
+                                <option>Czas malejąco</option>
+                            </select>
+                        </td>
+                        <td>
+                            <a class="btn-sm btn-primary">Sortuj</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="col-xs-2">Skąd</th>
+                        <th class="col-xs-1">Start</th>
+                        <th class="col-xs-2">Dokąd</th>
+                        <th class="col-xs-1">Koniec</th>
+                        <th class="col-xs-2">Czas lotu</th>
+                        <th class="col-xs-2">Przewoźnik</th>
+                        <th class="col-xs-1">Przesiadek</th>
+                        <th class="col-xs-2">Cena</th>
+                        <th class="col-xs-1"></th>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td class="col-xs-2">Wrocław (Starachowice)</td>
+                        <td class="col-xs-1">6:30</td>
+                        <td class="col-xs-2">Warszawa (Chopin)</td>
+                        <td class="col-xs-1">7:30</td>
+                        <td class="col-xs-2">60 min</td>
+                        <td class="col-xs-2">LOT</td>
+                        <td class="col-xs-1">0</td>
+                        <td class="col-xs-1">99 zł</td>
+                        <td class="col-xs-1"><a href="flightdetail.html" class="btn btn-primary">Zamów</a></td>
+                    </tr>
+                    <tr style="background-color: #ccc">
+                        <td class="col-xs-2">Wrocław (Starachowice)</td>
+                        <td class="col-xs-1">6:30</td>
+                        <td class="col-xs-2">Warszawa (Chopin)</td>
+                        <td class="col-xs-1">7:30</td>
+                        <td class="col-xs-2">60 min</td>
+                        <td class="col-xs-2">LOT</td>
+                        <td class="col-xs-1">0</td>
+                        <td class="col-xs-1">99 zł</td>
+                        <td class="col-xs-1"><a href="flightdetail.html" class="btn btn-primary">Zamów</a></td>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-2">Wrocław (Starachowice)</td>
+                        <td class="col-xs-1">6:30</td>
+                        <td class="col-xs-2">Warszawa (Chopin)</td>
+                        <td class="col-xs-1">7:30</td>
+                        <td class="col-xs-2">60 min</td>
+                        <td class="col-xs-2">LOT</td>
+                        <td class="col-xs-1">0</td>
+                        <td class="col-xs-1">99 zł</td>
+                        <td class="col-xs-1"><a href="flightdetail.html" class="btn btn-primary">Zamów</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+			
+			<div class="customize-col-content col-md-9">
             <h3 class="text-center" style="margin-top: 20px; margin-bottom: 20px; font-weight:bold">Szczegóły lotu</h4>
             <div class="row">
                 <div class="form-group">
@@ -123,14 +287,10 @@
                             <label class="col-sm-3 col-xs-3 text-center">200zł</label>
                         </div>
                     </div>
-                    <!--style="background-color:#d6dbe4"-->
                 </div>
                 <div class="col-sm-12 col-xs-12" style="margin-top: 30px">
-                    <div class="col-sm-6 col-xs-6 text-right">
-                        <a href="result.html" type="submit" class="btn btn-primary">Powrót</a>
-                    </div>
-                    <div class="col-sm-6 col-xs-6 text-left">
-                        <a href="booking.html" type="submit" class="btn btn-primary">Dalej</a>
+                    <div class="col-sm-7 col-xs-7 text-right">
+                        <a href="booking.html" type="submit" class="btn btn-primary" style="width:100px;">Rezerwuj</a>
                     </div>
                     <div>
                     </div>
@@ -138,10 +298,29 @@
             </div>
         </div>
     </div>
+			
+			
+        </div>
+	
+		
+    </div>
+</div>
+<script>
+    function updateTextInput(val) {
+        document.getElementById('textInput').value = val;
+    }
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    function updateTextInput2(val) {
+        document.getElementById('textInput2').value = val;
+    }
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
+
